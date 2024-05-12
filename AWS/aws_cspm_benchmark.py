@@ -269,7 +269,7 @@ headers = [
     'IsOrganizationTrail',
     'IncludeGlobalServiceEvents']
 with open('cloudtrails.csv', 'w', newline='', encoding='utf-8') as csv_file:
-    dict_writer = csv.DictWriter(csv_file, headers)
+    dict_writer = csv.DictWriter(csv_file, headers, extrasaction='ignore')
     dict_writer.writeheader()
     dict_writer.writerows(cloudtrails)
 
