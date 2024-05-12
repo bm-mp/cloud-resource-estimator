@@ -264,9 +264,9 @@ headers = [
     'Name',
     'S3BucketName',
     'IsMultiRegionTrail',
-    'HomeRegion', 
-    'TrailARN', 
-    'IsOrganizationTrail', 
+    'HomeRegion',
+    'TrailARN',
+    'IsOrganizationTrail',
     'IncludeGlobalServiceEvents']
 with open('cloudtrails.csv', 'w', newline='', encoding='utf-8') as csv_file:
     dict_writer = csv.DictWriter(csv_file, headers)
